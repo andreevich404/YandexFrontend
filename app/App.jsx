@@ -9,17 +9,17 @@ import { useStore } from './store/app-store';
 
 export const App = (props) => {
 
-  const store = useStore();
+	const store = useStore();
 
-  useEffect(() => {
-    store.checkAuth();
-  }, []);
+	useEffect(() => {
+		store.checkAuth();
+	}, []);
 
-  return (
-    <>
-      <Header />
-      {props.children}
-      <Footer />
-    </>
-  ) 
+	return (
+		<>
+			<Header />
+			{props.children}
+			<Footer />
+		</>
+	);
 };
